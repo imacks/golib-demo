@@ -41,7 +41,7 @@ $libsrc = @'
    public statc extern int Minus(int a, int b);
 '@
 $testlib = Add-Type -MemberDefinition $libsrc -Name 'TestLib' -PassThru -Namespace System.Runtime.InteropServices
-$testlib::SayHi()
+$testlib::Greet()
 $testlib::Add(5, 3)
 $testlib::Minus(5, 3)
 ```
