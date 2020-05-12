@@ -35,7 +35,7 @@ $libsrc = @'
    public static extern void Greet();
 
    [DllImport("C:\\libgoutil.dll", EntryPoint="Add")]
-   public statc extern int Add(int a, int b);
+   public static extern int Add(int a, int b);
 
    [DllImport("C:\\libgoutil.dll", EntryPoint="Minus")]
    public statc extern int Minus(int a, int b);
