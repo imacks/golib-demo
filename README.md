@@ -38,7 +38,7 @@ $libsrc = @'
    public static extern int Add(int a, int b);
 
    [DllImport("C:\\libgoutil.dll", EntryPoint="Minus")]
-   public statc extern int Minus(int a, int b);
+   public static extern int Minus(int a, int b);
 '@
 $testlib = Add-Type -MemberDefinition $libsrc -Name 'TestLib' -PassThru -Namespace System.Runtime.InteropServices
 $testlib::Greet()
